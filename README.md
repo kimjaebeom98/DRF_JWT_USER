@@ -32,3 +32,19 @@
 >   | --- | --- | --- | --- | --- | --- | --- |
 >   |**POST** |/api/user/signup|CREATE| AllowAny |사용자 회원가입| JSON { "email", "nickname", "password", "address" } | { "email", "nickname", "password", "address" } |
 >   |**POST** |/api/user/signin|NONE| AllowAny |사용자 로그인, access_token 생성 및 반환| JSON { "email", "password" } | { "access_token" }, HTTP_200_OK |
+
+### DataBase Models
+> schema
+> ![image](https://user-images.githubusercontent.com/87630540/187402587-1ec298dd-84a1-48cb-8f8f-9eb248bd896e.png)
+
+### Process
+
+- 회원가입
+
+![image](https://user-images.githubusercontent.com/87630540/187402925-82e0138f-4d86-4dc0-94ca-e225ad30eb94.png)
+
+- 로그인
+
+![image](https://user-images.githubusercontent.com/87630540/187403315-6ad7d020-5a44-4904-9fb7-6bbc2cd21f67.png)
+
+
